@@ -4,7 +4,7 @@ var Coolfeatures = {
 
         return array[this.getRandomIntBetween(0, array.length - 1)];
     },
-    getRandomIntBetween: function(from, to) {
-        return Math.floor(Math.random() * (to - from)) + from;
+    getRandomIntBetween: function(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 }
