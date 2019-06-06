@@ -1,4 +1,4 @@
-const Coolfeatures = {
+var Coolfeatures = {
     getRandomArrayValue: function(array) {
         array = array.filter((value, index) => index in array);
 
