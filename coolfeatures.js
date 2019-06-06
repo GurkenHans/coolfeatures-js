@@ -1,11 +1,11 @@
 function Coolfeatures() {
     return {
-        getRandomArrayValue(array) {
+        getRandomArrayValue: function(array) {
             array = array.filter((value, index) => index in array);
 
             return array[this.getRandomIntBetween(0, array.length - 1)];
         },
-        getRandomIntBetween(from, to) {
+        getRandomIntBetween: function(from, to) {
             return Math.floor(Math.random() * (to - from)) + from;
         }
     }
